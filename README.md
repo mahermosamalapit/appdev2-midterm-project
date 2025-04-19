@@ -1,18 +1,14 @@
-# appdev2-midterm-project.
+**## Profile **
 
-## 🔍 Project Overview
+Name: Malapit, Ma. Hermosa C.
+Course: AppDev2
+Date Submitted: April 19, 2025
 
-This is my midterm project for AppDev2. It is a simple HTTP server built with Node.js using core modules only (`http`, `fs`, and `events`). It performs CRUD operations on a local `todos.json` file and logs API activity to `logs.txt`, mimicking the behavior of [JSONPlaceholder's todos endpoint](https://jsonplaceholder.typicode.com/todos).
+## Project Overview
 
-## 🛠 Features
+This is my midterm project for AppDev2. It is a simple HTTP server built with Node.js using core modules only (`http`, `fs`, and `events`). It performs CRUD operations on a local `todos.json` file and logs API activity to `logs.txt`
 
-- RESTful API on port **3000**
-- Stores todos in `todos.json`
-- Logs API requests to `logs.txt` with timestamps
-- Built using **Node.js**, no external libraries
-- Error handling with appropriate HTTP status codes
-
-## 📦 Endpoints
+## Endpoints
 
 | Method | Endpoint      | Description                       |
 |--------|---------------|-----------------------------------|
