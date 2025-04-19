@@ -7,7 +7,7 @@ const PORT = 3000;
 const DATA_PATH = path.join(__dirname, 'todos.json');
 const LOG_PATH = path.join(__dirname, 'logs.txt');
 
-// Logger using events
+
 const logger = new EventEmitter();
 logger.on('log', (message) => {
   const timestamp = new Date().toISOString();
@@ -17,7 +17,7 @@ logger.on('log', (message) => {
   });
 });
 
-// Helper functions
+
 const readTodos = () => {
   return new Promise((resolve, reject) => {
     fs.readFile(DATA_PATH, 'utf8', (err, data) => {
@@ -40,7 +40,7 @@ const writeTodos = (todos) => {
   });
 };
 
-// Server creation
+// Create Server
 const server = http.createServer(async (req, res) => {
   const { method, url } = req;
   const [_, route, id] = url.split('/');
@@ -60,7 +60,7 @@ const server = http.createServer(async (req, res) => {
 
       let todos = await readTodos();
 
-      // GET /todos or /todos/:id
+      
       if (method === 'GET') {
         if (id) {
           const todo = todos.find(t => t.id == id);
@@ -77,7 +77,7 @@ const server = http.createServer(async (req, res) => {
         }
       }
 
-      // POST /todos
+      // POST
       if (method === 'POST') {
         const data = JSON.parse(body);
         if (!data.title) return res.writeHead(400).end('Missing title');
@@ -94,7 +94,7 @@ const server = http.createServer(async (req, res) => {
         return res.end(JSON.stringify(newTodo));
       }
 
-      // PUT /todos/:id
+      // PUT
       if (method === 'PUT' && id) {
         const index = todos.findIndex(t => t.id == id);
         if (index === -1) return res.writeHead(404).end('Todo not found');
@@ -105,7 +105,7 @@ const server = http.createServer(async (req, res) => {
         return res.end(JSON.stringify(todos[index]));
       }
 
-      // DELETE /todos/:id
+      // DELETE
       if (method === 'DELETE' && id) {
         const index = todos.findIndex(t => t.id == id);
         if (index === -1) return res.writeHead(404).end('Todo not found');
