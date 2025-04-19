@@ -26,3 +26,6 @@ Optional: Add `?completed=true` to `/todos` for filtering by completed status.
    ```bash
    git clone https://github.com/yourusername/appdev2-midterm-project.git
    cd appdev2-midterm-project
+
+🎬 Watch the short demo of how this project works:
+👉 https://drive.google.com/file/d/1yaK3M4msUFjWY-ypTggO3t4HkFWfNjd8/view?usp=sharing
