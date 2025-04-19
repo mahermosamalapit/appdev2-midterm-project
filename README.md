@@ -1,4 +1,4 @@
-**## Profile **
+## Profile
 
 Name: Malapit, Ma. Hermosa C.
 Course: AppDev2
