@@ -1,7 +1,7 @@
 ## Profile
 
 Name: Malapit, Ma. Hermosa C.
-Course: AppDev2
+
 Date Submitted: April 19, 2025
 
 ## Project Overview
