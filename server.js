@@ -1,5 +1,3 @@
-// server.js
-
 const http = require('http');
 const fs = require('fs');
 const { EventEmitter } = require('events');
@@ -126,5 +124,5 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`✅ Server running on http://localhost:${PORT}`);
+  console.log(` Server running on http://localhost:${PORT}`);
 });
