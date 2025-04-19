@@ -28,4 +28,4 @@ Optional: Add `?completed=true` to `/todos` for filtering by completed status.
    cd appdev2-midterm-project
 
 🎬 Watch the short demo of how this project works:
-👉 https://drive.google.com/file/d/1yaK3M4msUFjWY-ypTggO3t4HkFWfNjd8/view?usp=sharing
+https://drive.google.com/file/d/1QcyPSQf1EG1PUkntbND2tre6Gf36mxdy/view?usp=sharing
